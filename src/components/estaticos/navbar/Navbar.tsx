@@ -5,43 +5,45 @@ import './Navbar.css'
 function Navbar() {
     return (
         <>
-            <AppBar position="static">
-                <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            BlogPessoal
-                        </Typography>
-                    </Box>
+            <AppBar position="static"  >
+                <Toolbar variant="dense" >
+                    <Link to='/Home'>
+                        <Box className='cursor'>
+                            <Typography variant="h5" color="inherit">
+                                Home
+                            </Typography>
+                        </Box>
+                    </Link>
 
                     <Box display="flex" justifyContent="start">
-                        <Box mx={1} style={{ cursor: "pointer" }}>
+                        <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                home
+                                Quem somos
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
+                        <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                postagens
+                                O Espaço
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
+                        <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                temas
+                                Mural
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                cadastrar tema
-                            </Typography>
-                        </Box> 
-                         <Link to='/Login' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit" >
-                            Logout
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" color="inherit" >
+                                Agendamentos
                             </Typography>
                         </Box>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit" >
+                                    Login
+                                </Typography>
+                            </Box>
                         </Link>
-                       
+
                     </Box>
 
                 </Toolbar>
