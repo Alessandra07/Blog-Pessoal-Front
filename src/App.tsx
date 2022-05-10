@@ -9,20 +9,27 @@ import './App.css';
 
 
 function App() {
-  return (
+  return(
     <Router>
-      <Navbar />
-      <div style={{ minHeight: '100vh' }}>
-        <Routes> // Antigo Switch
-          <Route path="/" element={<Login />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
-        </Routes>
-      </div>
-      <Footer />
+    <Navbar />
+    <div style={{ minHeight: '100vh' }}>
+    <Routes> // Antigo Switch
+    <Route path="/" element={<Login />} />
+
+<Route path="/home" element={<Home />} />
+
+<Route path="/login" element={<Login />} />
+
+<Route path="/cadastrousuario" element={<CadastroUsuario />} />
+
+
+    
+    </Routes>
+    </div>
+    <Footer />
     </Router>
-  )
+    )
+    
 
 }
 
